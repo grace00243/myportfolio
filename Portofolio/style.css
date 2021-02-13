@@ -1,0 +1,267 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100&family=Source+Sans+Pro:wght@200&display=swap');
+
+*{
+    margin: 0%;
+    padding: 0%;
+}
+html{
+  scroll-behavior: smooth;
+}
+body{
+    font-family: "Leto",sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+    height: 100vh; 
+}
+header{
+    background-color: #45a049;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 80px;
+    
+}
+
+.container_logo{
+    height: 48px;
+    margin: 16px 48px;
+}
+.logo_first{
+  color: white;
+  font-size: 30px;
+  font-family: "Times New Roman", Times, serif;
+}
+.logo_second{
+  color: #000;
+  font-size: 30px;
+  font-family: "Papyrus", Times, serif;
+}
+
+.container_language{
+    position: relative;
+    bottom: 60px;
+}
+.img_side_bar{
+    margin-top: 8%;
+}
+.menu_container {
+   display: flex;
+   justify-content: flex-end;
+}
+.menu_container ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    position: relative;
+    bottom: 50px;
+}
+
+.menu_container li{
+    display: inline;
+    padding: 25px;
+    font-size: 20px;
+
+}
+.menu_container li a {
+    color: white;
+    text-align: center;
+    text-decoration: none;
+  }
+li a:hover:not(.active) {
+  background-color: #f44336; 
+  }
+.active{
+    background-color: #f44336;
+    border: 2px solid #f44336;
+    border-radius: 5px;
+    border-width: 20px;
+    height: 60px;
+
+}
+.text_about_me {
+  width: 400px;
+  height: 200px;
+  overflow: hidden;
+}
+.text_experience{
+  width: 400px;
+  height: 200px;
+  overflow: hidden;
+}
+#right_side_bar{
+    position: absolute;
+    right:0px;
+    top: 20%;
+    z-index: -1;
+}
+.polaroid{
+  width: 300px;
+  height: 500px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  text-align: center;
+}
+.image_polaroid:hover {
+    opacity: 0.5;
+  }
+.visit_site{
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 10px 22px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  
+}
+.view_code{
+  background-color: #f44336; /* Green */
+  border: none;
+  color: white;
+  padding: 10px 22px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+#left_side_bar{
+    position: relative;
+    padding-top: 18px;
+    padding-left: 25px;
+    z-index: -1;
+}
+.main_container_project{
+    display: flex;
+    column-gap: 30px;
+    padding-right: 30px;
+
+}
+.overlay{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #008CBA;
+  overflow: hidden;
+  -webkit-transform: scale(0);
+  -ms-transform: scale(0);
+  transform: scale(0);
+  -webkit-transition: .3s ease;
+  transition: .3s ease;
+}
+.container_project:hover .overlay {
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+  }
+  .visit_e-commerce{
+      background-color: red;
+      color: white;
+  }
+
+/* Style inputs with type="text", select elements and textareas */
+input[type=text], select, textarea {
+    width: 100%; /* Full width */
+    padding: 12px; /* Some padding */ 
+    border: 1px solid #ccc; /* Gray border */
+    border-radius: 4px; /* Rounded borders */
+    box-sizing: border-box; /* Make sure that padding and width stays in place */
+    margin-top: 6px; /* Add a top margin */
+    margin-bottom: 16px; /* Bottom margin */
+    resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+  }
+  
+  /* Style the submit button with a specific background color etc */
+  button[type=submit] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  /* When moving the mouse over the submit button, add a darker green color */
+  button[type=submit]:hover {
+    background-color: #45a049;
+  }
+  
+  /* Add a background color and some padding around the form */
+  .container_form {
+    width: 95%;
+    border-radius: 5px;
+    background-color: #fff;
+    padding: 20px;
+  }
+  .main_container_form{
+      display: flex;
+      position: relative;
+      justify-content: center;
+      top: 500px;
+      z-index: -1;
+  }
+  .form_texts{
+    position: absolute;
+    bottom: -900px;
+    left: 190px;
+    z-index: -1;
+}
+  .container_footer{
+      position: relative;
+      top: 500px;
+      height: 100px;
+      background-color: #45a049;
+  }
+  .find_me_text{
+      color: #fff;
+      font-size: 20px;
+      text-align: center;
+      padding-top: 10px;
+  }
+  .social_media ,.social_icon{
+      display: flex;
+      justify-content: center;
+      margin: 5px;       
+  }
+  .contact_me_text{
+      font-size: 40px;
+  }
+  hr{
+    width: 70%;
+  }
+  .location_text{
+      margin-left: 35px;
+      font-family: "Times New Roman", Times, serif;
+      font-size: 18px;
+  }
+  .email_text{
+      margin-left: 25px;
+      font-family: "Times New Roman", Times, serif;
+      font-size: 18px;
+  }
+  .get_in_touch{
+      font-family: "Times New Roman", Times, serif;
+      font-size: 17px;
+  }
+  .send_message{
+      margin-left: 10px;
+      font-size: 18px;
+  }
+  .text_skills{
+      margin-left: 10px;
+      font-size: 31px;
+      font-family: "Times New Roman", Times, serif;
+  }
+  .date_educ{
+      margin-left: 5px;
+  }
+
+  
+
+  
